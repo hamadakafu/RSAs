@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="KafuHamadanoMacBook-puro.local" name="RSA.DecimalTest" tests="48" errors="0" failures="0" skipped="0" time="3.862" timestamp="2019-03-06T18:35:41">
+                     <properties>
+      <property name="jline.esc.timeout" value="0"/><property name="jna.platform.library.path" value="/usr/lib:/usr/lib"/><property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/><property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib"/><property name="java.vm.version" value="25.171-b11"/><property name="gopherProxySet" value="false"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=":"/><property name="jna.loaded" value="true"/><property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="JP"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value="unknown"/><property name="jna.nosys" value="true"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="/Users/kafuhamada/Documents/Study/Scala/tutorial"/><property name="java.runtime.version" value="1.8.0_171-b11"/><property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/><property name="idea.managed" value="true"/><property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/endorsed"/><property name="os.arch" value="x86_64"/><property name="java.io.tmpdir" value="/var/folders/x2/gq0kg00d75938twy6jx862d00000gn/T/"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="os.name" value="Mac OS X"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/var/folders/x2/gq0kg00d75938twy6jx862d00000gn/T/jna--1869399441/jna3922469532771203404.tmp"/><property name="java.library.path" value="/Users/kafuhamada/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="10.14.1"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="user.home" value="/Users/kafuhamada"/><property name="user.timezone" value="Asia/Tokyo"/><property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="/Users/kafuhamada/Library/Application Support/IdeaIC2018.3/Scala/launcher/sbt-launch.jar"/><property name="user.name" value="kafuhamada"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="/Users/kafuhamada/Library/Application Support/IdeaIC2018.3/Scala/launcher/sbt-launch.jar --addPluginSbtFile=/private/var/folders/x2/gq0kg00d75938twy6jx862d00000gn/T/idea2.sbt idea-shell"/><property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="ja"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_171"/><property name="java.ext.dirs" value="/Users/kafuhamada/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/><property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="file.separator" value="/"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="sun.cpu.endian" value="little"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.isalist" value=""/>
+    </properties>
+                     <testcase classname="RSA.DecimalTest" name="All String must be digit, so Decimal(aiu) should be error" time="0.009">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="All String must be digit, so Decimal(-123) should be error" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="Decimal(+123) &gt; Decimal(+123) == false" time="0.004">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="Decimal(+) &gt; Decimal(+123) == false" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="Decimal(+) &gt; Decimal(-) == false" time="0.001">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="Decimal(+1) &gt; Decimal(-) == true" time="0.001">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="-(-+123) must be not same instance to +123" time="0.001">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="-(-+) must be not same instance to +" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (+) -&gt; 
+	 +123 +1234 == +1357" time="0.001">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (+) -&gt; 
+	 +999 +9999 == +10998" time="0.001">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (+) -&gt; 
+	 +998 +9999 == +10997" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (+) -&gt; 
+	 -998 -9999 == -10997" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (+) -&gt; 
+	 +998 -9999 == -9001" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (+) -&gt; 
+	 -998 +9999 == +9001" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (+) -&gt; 
+	 +9999 +1 == +10000" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 +123 - +1234 == -1111" time="0.001">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 +999 - +9999 == -9000" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 +998 - +9999 == -9001" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 -998 - -9999 == +9001" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 +998 - -9999 == +10997" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 -998 - +9999 == -10997" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 +100000 - +1 == +99999" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 +7015598 - +1704 == +7013894" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 +104 - +10 == +94" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 +1151 - +1057 == +94" time="0.0">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (-) -&gt; 
+	 +1001 - +152 == +849" time="0.001">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (*) -&gt; 
+	 +123 * +1234 == +151782" time="0.006">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (*) -&gt; 
+	 +999 * +9999 == +9989001" time="0.007">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (*) -&gt; 
+	 -998 * -9999 == +9979002" time="0.006">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (*) -&gt; 
+	 +998 * -9999 == -9979002" time="0.005">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (*) -&gt; 
+	 -998 * +9999 == -9979002" time="0.006">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (*) -&gt; 
+	 +100000 * +1 == +100000" time="0.005">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (*) -&gt; 
+	 +10000 * + == +" time="0.004">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (%) -&gt; 
+	 +123 % +1234 == (+,+123)" time="0.001">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (%) -&gt; 
+	 +123 % +123 == (+1,+)" time="0.021">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (%) -&gt; 
+	 +152151 % +151 == (+1007,+94)" time="0.075">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (%) -&gt; 
+	 +75017510581 % +195871 == (+382994,+92807)" time="0.197">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (%) -&gt; 
+	 +10099 % +7 == (+1442,+5)" time="0.062">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (%) -&gt; 
+	 +10000 % +47 == (+212,+36)" time="0.037">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (%) -&gt; 
+	 +10000 % +1000 == (+10,+)" time="0.018">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (%) -&gt; 
+	 +100 % +2 == (+50,+)" time="0.023">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (%) -&gt; 
+	 +10 % +2 == (+5,+)" time="0.021">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (modExp) -&gt; 
+	 +3 modExp(+100)(+7) == +4" time="0.191">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (modExp) -&gt; 
+	 +3 modExp(+10000)(+7) == +4" time="0.691">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (modExp) -&gt; 
+	 +251 modExp(+15175)(+7259) == +6243" time="2.446">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (axPlusby) -&gt;
+    +3 * -33 + +100 * +1 = 1" time="0.006">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (axPlusby) -&gt;
+    +3 * -3333 + +10000 * +1 = 1" time="0.007">
+                                                 
+                                               </testcase><testcase classname="RSA.DecimalTest" name="test: (axPlusby) -&gt;
+    +251 * +1451 + +15175 * -24 = 1" time="0.007">
+                                                 
+                                               </testcase>
+                     <system-out><![CDATA[]]></system-out>
+                     <system-err><![CDATA[]]></system-err>
+                   </testsuite>
